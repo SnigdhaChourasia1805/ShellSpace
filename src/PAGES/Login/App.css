@@ -1,0 +1,212 @@
+/* Login Container */
+.login-content,
+.signup-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.login-container,
+.signup-container {
+    animation: pulse-border 1.5s ease-in-out infinite;
+    border: 2px solid white;
+    margin: 5rem;
+    -webkit-box-shadow: 8px 8px 24px 0px rgb(87, 91, 125);
+    -moz-box-shadow: 8px 8px 24px 0px rgb(76, 79, 109);
+    box-shadow: 8px 8px 24px 0px rgb(45, 48, 83);
+    background: rgb(25, 31, 51);
+    color: #007bff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(79, 71, 71, 0.1);
+    width: 100%;
+    max-width: 400px;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.form-heading,
+.signup-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    & h1 {
+        margin-bottom: 5px;
+        font-size: 30px;
+        color: whitesmoke;
+    }
+
+    & p {
+        font-size: 10px;
+    }
+
+    & a {
+        color: #007bff;
+    }
+
+    & a:hover {
+        color: wheat;
+        text-decoration: underline;
+    }
+}
+
+.input-container {
+    margin-bottom: 20px;
+    /* padding: 20px; */
+}
+
+.input-container label {
+    display: block;
+    font-size: 14px;
+    color: whitesmoke;
+    margin-bottom: 5px;
+    padding: 10px;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 15px 45px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.remember-me input {
+    margin-right: 8px;
+}
+
+.sign-in-btn,
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.sign-in-btn:hover,
+.submit-btn:hover {
+    background-color: #0056b3;
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+}
+
+.forgot-password {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.forgot-password a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 14px;
+}
+
+.forgot-password a:hover {
+    color: wheat;
+    text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .login-container {
+        padding: 20px;
+        width: 90%;
+    }
+
+    .login-form h1 {
+        font-size: 20px;
+    }
+
+    .input-container input {
+        font-size: 14px;
+    }
+
+    .sign-in-btn {
+        font-size: 14px;
+    }
+}
+
+/* SIGNUP PAGE STARTS */
+.input-group {
+    margin-bottom: 15px;
+    padding: 8px;
+}
+
+.input-group label {
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: whitesmoke;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px 40px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .signup-container {
+        padding: 15px;
+    }
+
+    .signup-form h1 {
+        font-size: 20px;
+    }
+
+    .input-group input {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .submit-btn {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+/* SIGNUP PAGE ENDS */
